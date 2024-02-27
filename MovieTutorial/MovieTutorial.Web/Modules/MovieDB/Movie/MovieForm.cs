@@ -14,8 +14,9 @@ public class MovieForm
     public string Storyline { get; set; }
     public int Year { get; set; }
     public DateTime ReleaseDate { get; set; }
+    public List<int> GenreList { get; set; }
     [DisplayName("Runtime in Minutes"), Width(150), AlignRight]
     public int Runtime { get; set; }
-    public int GenreId { get; set; }
     public MovieKind Kind { get; set; }
+    
 }

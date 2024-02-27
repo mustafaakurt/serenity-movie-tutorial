@@ -16,10 +16,10 @@ public class MovieColumns
     public string Storyline { get; set; }
     public int Year { get; set; }
     public DateTime ReleaseDate { get; set; }
+    [Width(200), GenreListFormatter]
+    public List<int> GenreList { get; set; }
     [DisplayName("Runtime in Minutes"), Width(150), AlignRight]
     public int Runtime { get; set; }
-    [Width(100), QuickFilter]
-    public string GenreName { get; set; }
     public MovieKind Kind { get; set; }
 
 }
