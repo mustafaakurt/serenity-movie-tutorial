@@ -20,5 +20,7 @@ public class MovieForm
     [DisplayName("Runtime in Minutes"), Width(150), AlignRight]
     public int Runtime { get; set; }
     public MovieKind Kind { get; set; }
-    
+    public string PrimaryImage { get; set; }
+    public string GalleryImages { get; set; }
+
 }
