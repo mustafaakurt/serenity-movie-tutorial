@@ -1,4 +1,4 @@
-﻿using Serenity.Localization;
+using Serenity.Localization;
 using System.Reflection;
 
 namespace MovieTutorial.AppServices;
@@ -19,8 +19,6 @@ public class TypeSource : DefaultTypeSource
             typeof(SaveRequestHandler<>).Assembly,
             typeof(IDynamicScriptManager).Assembly,
             typeof(EnvironmentSettings).Assembly,
-            typeof(Serenity.Demo.Northwind.CustomerPage).Assembly,
-            typeof(Serenity.Demo.BasicSamples.BasicSamplesPage).Assembly,
             typeof(Startup).Assembly
         };
     }
