@@ -91,3 +91,6 @@
 .s-MovieDB-MovieDialog .caption {
   width: 150px;
 }
+.s-MovieDB-MovieCastEditDialog > .size {
+  width: 450px;
+}
