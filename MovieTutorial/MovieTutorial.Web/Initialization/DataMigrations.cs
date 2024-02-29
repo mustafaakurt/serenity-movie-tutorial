@@ -1,4 +1,4 @@
-﻿using FluentMigrator.Runner;
+using FluentMigrator.Runner;
 using FluentMigrator.Runner.Conventions;
 using FluentMigrator.Runner.Initialization;
 using FluentMigrator.Runner.Processors;
@@ -12,7 +12,6 @@ public class DataMigrations : IDataMigrations
 {
     private static readonly string[] databaseKeys = new[] {
     "Default"
-    , "Northwind"
 };
 
     private readonly ITypeSource typeSource;

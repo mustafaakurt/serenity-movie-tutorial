@@ -1,4 +1,4 @@
-﻿import { MovieCastEditor } from "@/MovieDB/MovieCast/MovieCastGrid";
+﻿import { MovieCastEditor } from "@/MovieDB/MovieCast/MovieCastEditor";
 import { StringEditor, TextAreaEditor, IntegerEditor, DateEditor, LookupEditor, EnumEditor, ImageUploadEditor, MultipleImageUploadEditor, PrefixedContext, initFormType } from "@serenity-is/corelib";
 import { MovieKind } from "./MovieKind";
 

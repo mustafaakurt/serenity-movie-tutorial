@@ -1,4 +1,4 @@
-﻿import { initFullHeightGridPage } from '@serenity-is/corelib';
+import { initFullHeightGridPage } from '@serenity-is/corelib';
 import { PersonGrid } from './PersonGrid';
 
 export default function pageInit() {

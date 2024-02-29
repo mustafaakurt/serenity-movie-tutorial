@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>MovieTutorial</RootNamespace>
@@ -28,10 +28,7 @@
     <PackageReference Include="Serenity.Assets" Version="6.9.6" />
     <PackageReference Include="Serenity.Scripts" Version="6.9.6" />
     <PackageReference Include="Serenity.Net.Web" Version="6.9.6" />
-    <PackageReference Include="Serenity.Extensions" Version="6.9.6.4" />
-    <PackageReference Include="Serenity.Demo.Northwind" Version="6.9.6.4" />
-    <PackageReference Include="Serenity.Demo.BasicSamples" Version="6.9.6.4" />
-  </ItemGroup>
+    <PackageReference Include="Serenity.Extensions" Version="6.9.6.4" />  </ItemGroup>
   <Target Name="NpmInstall" BeforeTargets="BeforeBuild" Condition="!Exists('node_modules\@types\jquery\index.d.ts')">
     <Message Text="Installing NPM packages..." Importance="high" />
     <Exec Command="npm install" />
@@ -40,7 +37,8 @@
     <Exec Command="dotnet tool restore" ContinueOnError="true" />
     <Exec Command="$(DotNetSergen) mvct" ContinueOnError="true" />
   </Target>
-  <Target Name="TransformServerTypings" AfterTargets="AfterBuild">
+  <Target Name="TransformServer&#xA;
+          " AfterTargets="AfterBuild">
     <Exec Command="$(DotNetSergen) servertypings" ContinueOnError="true" />
   </Target>
   <Target Name="CreateInputsOutputs" BeforeTargets="BeforeBuild">
